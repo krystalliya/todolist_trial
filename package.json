@@ -1,0 +1,16 @@
+{
+  "name": "todolist-trial",
+  "version": "1.0.0",
+  "description": "try to do it myself",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Una",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}

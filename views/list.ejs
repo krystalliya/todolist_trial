@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Style+Script&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Shadows+Into+Light&family=Style+Script&family=Yanone+Kaffeesatz:wght@300&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>❤︎ Todo List</h1>
+  <h3><%= theDate %></h3>
+  <p>Weather in Singapore: <%= temperature %>°C, <%= weather %>.</p>
+
+  <ul>
+
+    <% for (var i = 0; i < todoList.length; i++){ %>
+
+    <li>
+      <input 
+        type="checkbox" 
+        id="<%= todoList[i].id %>"
+      >
+
+      <%= todoList[i].event %> - <%= todoList[i].dueDate %>
+
+      <form 
+        action="/delete/<%= todoList[i].id %>" 
+        method="post"
+      >
+        <button type="text" name="deleteButton">
+          Delete
+        </button>
+      </form>
+
+    </li>
+    <% } %>
+  </ul>
+
+  <form class="" action="/" method="post">
+    <label for="">Event</label>
+    <input type="text" name="newEvent" class="newEvent">
+    <br>
+    <label for="">Due Date</label>
+    <input type="text" name="newDueDate">
+    <button type="submit" name="button">Add</button>
+  </form>
+
+</body>
+
+</html>

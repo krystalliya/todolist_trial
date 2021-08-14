@@ -1,0 +1,36 @@
+body {
+    background-color: #F5E8C7;
+    color: #6F4C5B;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+button {
+    color: #6F4C5B;
+    font-size: 12px;
+    border: none;
+    background-color: #DEBA9D;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+button:hover{
+    background-color: #9E7777;
+    color: #DEBA9D;
+}
+
+form {
+    display: inline-block;
+}
+
+input {
+    border-color: none;
+}
+
+h1 {
+    font-family: 'Shadows Into Light', cursive;
+}
