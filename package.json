@@ -4,6 +4,7 @@
   "description": "try to do it myself",
   "main": "app.js",
   "scripts": {
+    "start": "node app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Una",
