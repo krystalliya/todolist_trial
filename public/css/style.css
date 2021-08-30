@@ -1,21 +1,22 @@
-body {
+html {
     background-color: #F5E8C7;
-    color: #6F4C5B;
-    line-height: 30px;
+    background: linear-gradient(15deg, #DEBA9D 50%, #F5E8C7 50%);
+    height: 100%;
+    /* font-family: 'helvetica neue'; */
     font-family: 'Montserrat', sans-serif;
-    padding-left: 30px;
-    padding-top: 30px;
+    line-height: 30px;
 }
 
+
+/* delete/add button */
 button {
     color: #6F4C5B;
     font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
     border: none;
     background-color: #DEBA9D;
     border-radius: 4px;
     padding: 4px 8px;
-    font-family: 'Montserrat', sans-serif;
-
 }
 
 button:hover{
@@ -23,14 +24,37 @@ button:hover{
     color: #DEBA9D;
 }
 
+
 form {
     display: inline-block;
 }
+
 
 input {
     border-color: none;
 }
 
 h1 {
+    color: #6F4C5B;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+.box {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    font-size: smaller;
+}
+
+#title {
     font-family: 'Shadows Into Light', cursive;
+}
+
+#heading{
+    background-color: #DEBA9D;
 }
